@@ -1,2 +1,4 @@
 pymupdf == 1.28.0
 pymupdf4llm == 1.28.0
+dotenv
+groq == 1.6.0
