@@ -3,7 +3,8 @@ import os
 
 from utils import read_text_file
 
-DIRECTORY = Path(r"C:\Users\ashmi\OneDrive\Documents\GitHub\ScoreMatch\artifacts\job_descriptions")
+
+DIRECTORY = Path(os.path.join(os.path.dirname(__file__), r"artifacts\job_descriptions"))
 
 
 def get_job_list():

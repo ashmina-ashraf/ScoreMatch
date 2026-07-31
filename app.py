@@ -1,13 +1,14 @@
 from resume_reader_utils import read_resume
-
 from llm_utils import get_match_score
 from job_list_utils import get_job_list, get_job_desc
+
+import os
 
 import logging
 logging.basicConfig(level=logging.INFO)
 
-
-RESUME_PATH = r"C:\Users\ashmi\OneDrive\Documents\GitHub\ScoreMatch\artifacts\Resume.pdf"
+RESUME_PATH = os.path.join(os.path.dirname(__file__), r"artifacts\Resume.pdf")
+logging.info(f"Resume Path : {RESUME_PATH}")
 
 
 #Read Resume 

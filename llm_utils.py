@@ -12,7 +12,8 @@ from utils import read_text_file
 GROQ_API_KEY = os.getenv("GROQ_KEY", None)
 MODEL = "llama-3.3-70b-versatile"
 
-INSTRUCTION_PROMPT = read_text_file(path=r"C:\Users\ashmi\OneDrive\Documents\GitHub\ScoreMatch\prompts\sys_instruction.md")
+INSTRUCTION_PATH = os.path.join(os.path.dirname(__file__), r"prompts\sys_instruction.md")
+INSTRUCTION_PROMPT = read_text_file(path=INSTRUCTION_PATH)
 
 
 # Initialising Groq Client
