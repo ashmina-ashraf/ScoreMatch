@@ -1,4 +1,4 @@
-from resume_reader_utilities import read_resume
+from resume_reader_utils import read_resume
 import logging
 
 logging.basicConfig(level=logging.INFO)
